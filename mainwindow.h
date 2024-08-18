@@ -42,16 +42,20 @@ private slots:
 
     void on_canceButton_clicked();
 
+    void on_actionDark_Mode_triggered(bool checked);
+
 private:
     Ui::MainWindow *ui;
     void switchColor(int i, int j, int colorNumber);
     void compare();
     void buttonClick(int buttonNumber);
+    void showCode();
 
     QLabel* squares[10][4];
     QPushButton* colorButtons[8];
     QLabel* gpgcArray[10];
     QLabel* gcArray[10];
+    QLabel* solutionLabelArray[4];
 
     int turnNumber = 1;
     int code[4];
@@ -60,14 +64,14 @@ private:
     bool gameOver = true;
     int inputNumber = 0;
 
-    QString colors[8] = {"rgb(255, 0, 0)",
-                         "rgb(0, 0, 255)",
-                         "rgb(0, 255, 0)",
-                         "rgb(255, 0, 127)",
-                         "rgb(255, 255, 51)",
-                         "rgb(200, 200, 200)",
-                         "rgb(255, 154, 0)",
-                         "rgb(255, 255, 255)"};
+    QString colors[8] = {"rgb(255, 0, 0)",      //red
+                         "rgb(0, 0, 255)",      //blue
+                         "rgb(0, 255, 0)",      //green
+                         "rgb(255, 0, 127)",    //pink
+                         "rgb(255, 255, 51)",   //yellow
+                         "rgb(150, 150, 150)",  //gray
+                         "rgb(255, 154, 0)",    //orange
+                         "rgb(230, 230, 230)"}; //white
 
     void resetGame();
 };

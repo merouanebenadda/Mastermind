@@ -32,6 +32,11 @@ MainWindow::MainWindow(QWidget *parent)
         colorButtons[i-1] = findChild<QPushButton*>(buttonName);
         colorButtons[i-1]->setStyleSheet("background-color: " + colors[i-1] + ";");
     }
+
+    for (int i=1; i<5; i++) {
+        QString labelName = QString("codeSquare%1").arg(i);
+        solutionLabelArray[i-1] = findChild<QLabel*>(labelName);
+    }
 }
 
 MainWindow::~MainWindow()
@@ -56,10 +61,12 @@ bool mem(int vect[4], int n) {
 
 void MainWindow::on_confirmButton_clicked()
 {
-    compare();
-    inputNumber = 0;
-    for (int i=0; i<4; i++){
-        guess[i]=0;
+    if (inputNumber == 4){
+        compare();
+        inputNumber = 0;
+        for (int i=0; i<4; i++){
+            guess[i]=0;
+        }
     }
 }
 
@@ -89,7 +96,7 @@ void MainWindow::buttonClick(int buttonNumber)
     }
 
     else {
-        ui->announcementLabel->setText("You can't choose that color !");
+        ui->announcementLabel->setText("You can't choose that color!");
     }
 }
 
@@ -109,22 +116,36 @@ void MainWindow::resetGame()
 {
     ui->announcementLabel->setText("Pick a color");
 
-    turnNumber = 1;
-
     for (int i =0; i<4; i++) {
         code[i]=0;
     }
     randomColors(code);
 
     for (int i=0; i<10; i++){
+
+        gpgcArray[i]->setText("");
+        gcArray[i]->setText("");
+
         for (int j=0; j<4; j++){
             squares[i][j]->setStyleSheet("background-color: rgb(0, 0, 0)");
         }
     }
 
+    for (int i=0; i<4; i++){
+        solutionLabelArray[i]->setStyleSheet("background-color: rgb(0, 0, 0);");
+    }
+
     gameOver = false;
     pendingInput = false;
     inputNumber = 0;
+    turnNumber = 1;
+}
+
+void MainWindow::showCode()
+{
+    for (int i=0; i<4; i++){
+        solutionLabelArray[i]->setStyleSheet("background-color: " + colors[code[i]-1] + ";");
+    }
 }
 
 void MainWindow::compare()
@@ -143,8 +164,15 @@ void MainWindow::compare()
     }
 
     if (gpgc == 4) {
-        ui->announcementLabel->setText("You won!");
         gameOver = true;
+        ui->announcementLabel->setText("You won!");
+        showCode();
+    }
+
+    else if (turnNumber == 10) {
+        gameOver = true;
+        ui->announcementLabel->setText("You lost.");
+        showCode();
     }
 
     else {
@@ -224,3 +252,14 @@ void MainWindow::on_colorPicker8_clicked()
 }
 
 
+
+void MainWindow::on_actionDark_Mode_triggered(bool checked)
+{
+    if (checked){
+        this->setStyleSheet("background-color: rgb(0, 0, 102)");
+    }
+
+    else {
+        this->setStyleSheet("background-color: rgb(65, 121, 206)");
+    }
+}

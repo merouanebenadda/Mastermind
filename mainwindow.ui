@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(65, 121, 206)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="square1_41">
     <property name="geometry">
@@ -728,7 +731,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: italic 9pt &quot;URW Bookman L&quot;;</string>
+     <string notr="true">background-color: rgb(195, 195, 195); 
+font: italic 9pt &quot;URW Bookman L&quot;;</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;Mastermind&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -842,13 +846,18 @@
     <property name="geometry">
      <rect>
       <x>710</x>
-      <y>140</y>
+      <y>160</y>
       <width>181</width>
       <height>61</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195); 
+font: 10pt &quot;Sans Serif&quot;;
+qproperty-alignment: AlignCenter;</string>
+    </property>
     <property name="text">
-     <string>Welcome to Mastermind</string>
+     <string>Welcome to Mastermind </string>
     </property>
    </widget>
    <widget class="QPushButton" name="confirmButton">
@@ -859,6 +868,9 @@
       <width>80</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195); </string>
     </property>
     <property name="text">
      <string>Confirm</string>
@@ -873,6 +885,9 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195); </string>
+    </property>
     <property name="text">
      <string>Cancel</string>
     </property>
@@ -882,12 +897,14 @@
      <rect>
       <x>350</x>
       <y>20</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">color: red;
+qproperty-alignment: AlignCenter;
+background-color: rgb(195, 195, 195);</string>
     </property>
     <property name="text">
      <string/>
@@ -898,12 +915,12 @@
      <rect>
       <x>350</x>
       <y>70</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">color: red; qproperty-alignment: AlignCenter;background-color: rgb(195, 195, 195)</string>
     </property>
     <property name="text">
      <string/>
@@ -914,12 +931,12 @@
      <rect>
       <x>350</x>
       <y>120</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195);color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -930,12 +947,12 @@
      <rect>
       <x>350</x>
       <y>170</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -946,12 +963,12 @@
      <rect>
       <x>350</x>
       <y>220</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -962,12 +979,12 @@
      <rect>
       <x>350</x>
       <y>270</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -978,12 +995,13 @@
      <rect>
       <x>350</x>
       <y>320</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); 
+color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -994,12 +1012,12 @@
      <rect>
       <x>350</x>
       <y>370</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1010,12 +1028,12 @@
      <rect>
       <x>350</x>
       <y>420</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1026,12 +1044,12 @@
      <rect>
       <x>350</x>
       <y>470</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: red</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: red; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1040,14 +1058,14 @@
    <widget class="QLabel" name="gcLabel_1">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>20</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1056,14 +1074,14 @@
    <widget class="QLabel" name="gcLabel_2">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>70</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1072,14 +1090,14 @@
    <widget class="QLabel" name="gcLabel_3">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>120</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1088,14 +1106,14 @@
    <widget class="QLabel" name="gcLabel_4">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>170</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1104,14 +1122,14 @@
    <widget class="QLabel" name="gcLabel_5">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>220</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1120,14 +1138,14 @@
    <widget class="QLabel" name="gcLabel_6">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>270</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1136,14 +1154,14 @@
    <widget class="QLabel" name="gcLabel_7">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>320</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1152,14 +1170,14 @@
    <widget class="QLabel" name="gcLabel_8">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>370</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1168,14 +1186,15 @@
    <widget class="QLabel" name="gcLabel_9">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>420</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); 
+color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
@@ -1184,19 +1203,129 @@
    <widget class="QLabel" name="gcLabel_10">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>560</x>
       <y>470</y>
-      <width>21</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: blue</string>
+     <string notr="true">background-color: rgb(195, 195, 195); color: blue; qproperty-alignment: AlignCenter;</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>-10</y>
+      <width>241</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>150</y>
+      <width>221</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(195, 195, 195)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>square1_41</zorder>
+   <zorder>square1_42</zorder>
+   <zorder>square1_43</zorder>
+   <zorder>square1_44</zorder>
+   <zorder>square1_45</zorder>
+   <zorder>square1_46</zorder>
+   <zorder>square1_47</zorder>
+   <zorder>square1_48</zorder>
+   <zorder>square1_49</zorder>
+   <zorder>square1_50</zorder>
+   <zorder>square1_51</zorder>
+   <zorder>square1_52</zorder>
+   <zorder>square1_53</zorder>
+   <zorder>square1_54</zorder>
+   <zorder>square1_55</zorder>
+   <zorder>square1_56</zorder>
+   <zorder>square1_57</zorder>
+   <zorder>square1_58</zorder>
+   <zorder>square1_59</zorder>
+   <zorder>square1_60</zorder>
+   <zorder>square1_61</zorder>
+   <zorder>square1_62</zorder>
+   <zorder>square1_63</zorder>
+   <zorder>square1_64</zorder>
+   <zorder>square1_65</zorder>
+   <zorder>square1_66</zorder>
+   <zorder>square1_67</zorder>
+   <zorder>square1_68</zorder>
+   <zorder>square1_69</zorder>
+   <zorder>square1_70</zorder>
+   <zorder>square1_71</zorder>
+   <zorder>square1_72</zorder>
+   <zorder>square1_73</zorder>
+   <zorder>square1_74</zorder>
+   <zorder>square1_75</zorder>
+   <zorder>square1_76</zorder>
+   <zorder>square1_77</zorder>
+   <zorder>square1_78</zorder>
+   <zorder>square1_79</zorder>
+   <zorder>square1_80</zorder>
+   <zorder>codeSquare1</zorder>
+   <zorder>codeSquare2</zorder>
+   <zorder>codeSquare3</zorder>
+   <zorder>codeSquare4</zorder>
+   <zorder>gameName</zorder>
+   <zorder>colorPicker1</zorder>
+   <zorder>colorPicker2</zorder>
+   <zorder>colorPicker3</zorder>
+   <zorder>colorPicker4</zorder>
+   <zorder>colorPicker5</zorder>
+   <zorder>colorPicker6</zorder>
+   <zorder>colorPicker7</zorder>
+   <zorder>colorPicker8</zorder>
+   <zorder>announcementLabel</zorder>
+   <zorder>confirmButton</zorder>
+   <zorder>canceButton</zorder>
+   <zorder>gpgcLabel_1</zorder>
+   <zorder>gpgcLabel_2</zorder>
+   <zorder>gpgcLabel_3</zorder>
+   <zorder>gpgcLabel_4</zorder>
+   <zorder>gpgcLabel_5</zorder>
+   <zorder>gpgcLabel_6</zorder>
+   <zorder>gpgcLabel_7</zorder>
+   <zorder>gpgcLabel_8</zorder>
+   <zorder>gpgcLabel_9</zorder>
+   <zorder>gpgcLabel_10</zorder>
+   <zorder>gcLabel_1</zorder>
+   <zorder>gcLabel_2</zorder>
+   <zorder>gcLabel_3</zorder>
+   <zorder>gcLabel_4</zorder>
+   <zorder>gcLabel_5</zorder>
+   <zorder>gcLabel_6</zorder>
+   <zorder>gcLabel_7</zorder>
+   <zorder>gcLabel_8</zorder>
+   <zorder>gcLabel_9</zorder>
+   <zorder>gcLabel_10</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -1212,6 +1341,7 @@
      <string>Options</string>
     </property>
     <addaction name="actionNew_Game"/>
+    <addaction name="actionDark_Mode"/>
    </widget>
    <addaction name="menuOptions"/>
   </widget>
@@ -1222,6 +1352,17 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionDark_Mode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Dark Mode</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
  </widget>
