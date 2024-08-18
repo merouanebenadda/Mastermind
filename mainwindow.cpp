@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QSound>
 #include <random>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -93,10 +94,13 @@ void MainWindow::buttonClick(int buttonNumber)
             ui->announcementLabel->setText("Confirm input");
             pendingInput = false;
         }
+
+        QSound::play(":/click");
     }
 
     else {
         ui->announcementLabel->setText("You can't choose that color!");
+        QSound::play(":/error");
     }
 }
 
@@ -172,6 +176,7 @@ void MainWindow::compare()
     else if (turnNumber == 10) {
         gameOver = true;
         ui->announcementLabel->setText("You lost.");
+        QSound::play(":/gameOver");
         showCode();
     }
 

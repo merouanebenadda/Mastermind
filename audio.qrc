@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="click">resources/audio/click.wav</file>
+        <file alias="gameOver">resources/audio/gameOver.wav</file>
+        <file alias="error">resources/audio/error.wav</file>
+    </qresource>
+</RCC>

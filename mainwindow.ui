@@ -1220,13 +1220,14 @@ color: blue; qproperty-alignment: AlignCenter;</string>
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>-10</y>
+      <y>0</y>
       <width>241</width>
-      <height>641</height>
+      <height>631</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(195, 195, 195)</string>
+     <string notr="true">background-color: rgb(195, 195, 195);
+border-radius: 15px;</string>
     </property>
     <property name="text">
      <string/>
@@ -1242,7 +1243,8 @@ color: blue; qproperty-alignment: AlignCenter;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(195, 195, 195)</string>
+     <string notr="true">background-color: rgb(195, 195, 195);
+border-radius: 15px</string>
     </property>
     <property name="text">
      <string/>
